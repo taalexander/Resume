@@ -1,7 +1,10 @@
-Resume
+Resume: Thomas Alexander
 ======
 
 My Resume and Cover Letters. In Latex
+Status 
+--------------- 
+I am currently a student entering my fourth and final year. I am open to employment oppurtunities starting Spring 2014. 
 
 Credit
 ---------------
