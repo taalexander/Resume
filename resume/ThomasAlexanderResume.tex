@@ -1,0 +1,314 @@
+\documentclass[9pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[usenames]{color}
+\usepackage{dirtytalk}
+\leftmargin=0.25in
+\oddsidemargin=0.25in
+\textwidth=6.0in
+\topmargin=-0.25in
+\textheight=9.25in
+
+\raggedright
+
+\pagenumbering{arabic}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\newcommand{\lineover}{
+	\begin{changemargin}{-0.05in}{-0.05in}
+		\vspace*{-8pt}
+		\hrulefill \\
+		\vspace*{-2pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\scshape{#1}\\
+  	\lineover
+	\end{changemargin}
+}
+
+\newcommand{\contact}[4]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\begin{center}
+			{\Large \scshape {#1}}\\ \smallskip
+			{#2}\\ \smallskip 
+			{#4}\\ \smallskip
+			{#3}\smallskip
+		\end{center}
+	\end{changemargin}
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.25in}{-0.5in}
+  }	
+	{\end{changemargin}
+}	
+
+\newcommand{\school}[4]{
+	\textbf{#1} \hfill \emph{#2\\}
+	#3\\ 
+	#4\\
+}
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Name
+\contact{Thomas Alexander}{thomasalexander2718@gmail.com}{(902) 800-2143}{github.com/whitewhim2718}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Objective
+\header{Personal Statement}
+
+\begin{body}
+	\vspace{14pt}
+	A student of the sciences with primary interests in physics and computer science, I am currently working in experimental quantum-spin physics with applications directed towards quantum computing/sensors. In addition I am looking at applying numerical bayesian inference to experimental design procedures. In my personal time I am fascinated by the recent developments in deep learning techniques and work on personal projects such as building my own personal low-budget Earths Field NMR spectrometer. 
+
+	I graduated from Mount Allison University with \say{First Class Honours with Distinction} in physics, and a double minor in computer science and mathematics. I am  currently completing my masters degree in physics at the Institute for Quantum Computing (University of Waterloo), studying under Canada Excellence Research Chair in Quantum Information Dr. David Cory, and expect to graduate in August 2016. I am interested in challenging oppurtunities in either academia or industry where there is a possibility to make a high impact.
+
+\end{body}
+\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+\header{Education}
+\begin{body}
+	\vspace{14pt}
+	\textbf{MSc in Physics (Quantum Information) --- GPA 89\% }{} \hfill \emph{September 2014 - August 2016}{} \\
+	\emph{Institute for Quantum Computing - University of Waterloo}, Waterloo, ON{} \\
+  
+\end{body}
+\begin{body}
+	\vspace{14pt}
+	\textbf{Undergraduate School on Experimental Quantum Information Processing}{} \hfill \emph{May 2013 - June 2013}{} \\
+	\emph{Institute for Quantum Computing - University of Waterloo}, Waterloo, ON{} \\
+  
+\end{body}
+\begin{body}
+	\vspace{14pt}
+	\textbf{BSc in Physics --- GPA 3.7 }{} \hfill \emph{September 2010 - May 2014}{} \\
+	\emph{Mount Allison University}, Sackville, NB{} \\
+  
+\end{body}
+
+\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Experience
+\header{Career History}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Research Assistant}, \emph{Institute for Quantum Computing} \hfill \emph{September 2014 - August 2016}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item Studied phosphorous defects in both isotopically purified and natural silicon. In a small team a unique experiment was designed
+		and implemented to ionize the phosphorus donors with high voltages (~10kV) at low temperatures (~4K) and to detect a relatively small 
+		number of ionized spins inductively.
+		\item Applied bayesian inference to the task of estimating T1 relaxation times in quantum systems, and applied an online experimental 
+		design procedure to select maximally informative experiments. Included the use of both analytic and numerical methods. 
+		\item Work towards the design of an experimental procedure to measure the Earth's magnetic field using multi-axis 
+		ensembles of Nitrogen Vacancy centers in diamond.
+		\item Led a team of cooperative students in the design of low-temperature electronics (filtering,amplification,isolatin) for a $300mK$ He3 
+		fridge. 
+		\item Recruiting future IQC students at the AUPAC undergraduate conference in St. John's, Newfoundland. 
+
+	\end{itemize}
+	\textbf{Software Developer}, \emph{Mount Allison University} \hfill \emph{Summer 2014}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item Worked with a team of students with funding from the Canadian Hemochromatosis Society (CHS) to design and develop a multi-platform mobile application 
+		(Irontracker) to aid sufferers of Hemochromatosis with their treatments and collect data for the CHS to improve future treatment. 
+		\item Architected and implemented a backend database and REST API used by the mobile application to acquire patient treatment data.
+	\end{itemize}
+	\textbf{Undergraduate Research}, \emph{Institute For Quantum Computing} \hfill \emph{Summer 2013}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item Working with researchers to design an experiment to improve the contrast of neutron interferometry phase measurements, using Bayesian MCMC methods.  
+		\item Designed and developed a neutron interferometry control system to be installed at National Institute for Standards and Technology in Gaithersburg, MD.
+		\item Implementation of likelihood functions on GPGPUs. 
+	\end{itemize}
+	\textbf{Software Development Intern}, \emph{G2 Research} \hfill \emph{Summer 2012}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item Development of cellular tracking and analysis software.
+		\item Setup OpenStreetMaps rendering server.
+		\item Product and software research.
+	\end{itemize}
+
+	\textbf {IT Manager}, \emph{The Argosy Newspaper} \hfill \emph{2011-2012}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt
+		\item Setup and maintenance of Drupal news site.
+		\item Cloud server setup on NGINX/PHP-FPM stack. 
+		\item Serviced companies equipment and network. 
+	\end{itemize}
+
+	\textbf {MSDS Database Creation}, \emph{Maritime Beauty} \hfill \emph{Summer 2011}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt
+		\item Setup a Material Safety Data Sheet database for Maritime Beauty on proprietary software. 
+		\item Networked with outside companies to develop relationships and acquire information. 
+	\end{itemize}
+	\textbf {Production Manager}, \emph{Skratch That} \hfill \emph{2009-2010}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt
+		\item Production manager of an entrepreneurial startup that was part of the Junior Achievement program.
+		Responsible for production of the companys product and production implementation. \say{Skratch That} won
+		Company of the Year in Atlantic Canada for 2010.
+	\end{itemize}
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+\header{Talks}
+\begin{body}
+	\vspace{14pt}
+	\textbf{ Inonization and Inductive Detection of Phosphorus Defects in Isotopically Purified Silicon - Google University Conference }{} \hfill \emph{November 2015}{} \\
+	\emph{Google Kitchener-Waterloo}, Kitchener, ON{} \\
+\end{body}  
+\begin{body}
+	\vspace{14pt}
+	\textbf{ Inonization and Inductive Detection of Phosphorus Defects in Isotopically Purified Silicon - CREATE Yearly Meeting}{} \hfill \emph{October 2015}{} \\
+	\emph{University of Waterloo}, Waterloo, ON{} \\
+\end{body}
+\begin{body}
+	\vspace{14pt}
+	\textbf{ Development of Electronics for Low Temperature Fridge - CREATE Yearly Meeting}{} \\ \hfill \emph{October 2015}{} \\
+	\emph{McMaster University}, Hamilton, ON{} \\
+\end{body}
+
+\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \newpage{} % uncomment this line if you want to force a new page
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Publications
+%\header{Selected Publications}
+
+%\begin{body}
+%	\vspace{14pt}
+%	Seth Holloway. ``\textbf{Writing Resumes in LaTeX},'' in \emph{Proceedings of the Mind of Seth Holloway}. %2011.\\
+%	\smallskip
+%\end{body}
+
+%\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Skills
+\header{Skills}
+
+\begin{body}
+	\vspace{14pt}
+
+	\emph{\textbf{Physics:}}{} quantum gate design, nanoelectronics,
+	open quantum systems, NMR, spin physics, neutron interferometry, quantum mechanics, quantum Computing, electrodynamics, optics, solid state physics, classical mechanics, analog electronics, digital electronics\\
+	\medskip
+	\emph{\textbf{Hardware:}}{}  cryogenics, NMR spectrometers, microwave engineering, hardware communitcation, 
+	                 filtering, Arduino, GPGPU programming, Cloud computing, Analog Electronics\\
+	\medskip
+	\emph{\textbf{Programming:}}{} 
+    Daily Use: Python/numpy/scipy, Mathematica, \LaTeX \\
+    Experience: tensorflow, R, Julia, matlab, Java, Scala/Akka, HTML5/CSS, JavaScript/Node.js,
+	SQL, C, Cuda C, OpenCl, git, svn, MongoDB\\
+	\medskip
+	\emph{\textbf{Programming Concepts:}}{} bayesian analysis, neural networks, basic AI, algorithms analysis, object orientated programming, unit testing, quantum
+    computing, computer architecture, functional programming, data structures, databases\\
+
+	
+	\medskip
+	\emph{\textbf{Operating Systems:}}{} Linux, Windows, Mac OSX\\
+
+	
+
+	
+\end{body}
+
+
+\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Leadership
+\header{Leadership Activities}
+
+\begin{body}
+	\vspace{14pt}
+	
+	\textbf{Volunteer}, Operation Christmas Child \hfill{} \emph{2015}\\
+\end{body}
+
+\begin{body}
+	\vspace{14pt}
+	
+	\textbf{Teaching Assistant}, QCSYS - Instructed camp members in learning material \hfill{} \emph{2015}\\
+\end{body}
+\begin{body}
+	\vspace{14pt}
+	
+	\textbf{Experiment leader}, USEQIP - Lead experiments for camp members \hfill{} \emph{2015}\\
+\end{body}
+
+\begin{body}
+	\vspace{14pt}
+	
+	\textbf{Varsity Athlete} Rugby team - University of Waterloo \hfill{} \emph{2014-2016}\\
+\end{body}
+\begin{body}
+	\vspace{14pt}
+
+	\textbf{Tutor}, Physics and Computer Science \hfill{} \emph{2010 - Current}\\
+\end{body}
+
+\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Awards and Honors
+\header{Awards and Honors}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{CREATE funding recipient} - Fully funded scholarship through NSERC \hfill{} \emph{2014-2016}\\
+	\smallskip
+	\textbf{4'th Place}, The 2012 Northeast North America Regional ACM Contest Preliminary \hfill{} \emph{2012}\\
+	\smallskip
+	\textbf{3'rd Place}, Robot's East Atlantic Championships \hfill{} \emph {2010}
+	\\
+	\smallskip
+	\textbf{1'st Place}, Robot's East Atlantic Championships \hfill{} \emph {2009}
+	\\
+	\smallskip
+	\textbf{1'st Place}, Robot's East Atlantic Championships \hfill{} \emph {2008}
+\end{body}
+
+\end{document}
