@@ -1,0 +1,249 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Thomas}{Alexander}{\href{mailto:thomasalexander2718@gmail.com}{thomasalexander2718@gmail.com} | 226.505.1869 | \href{mailto:t4alexan@uwaterloo.ca}{t4alexan@uwaterloo.ca}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\subsection{University of Waterloo}
+\descript{PhD in Quantum Information/Physics }
+\location{Jan 2018 - Deferring | Waterloo, ON}
+\sectionsep
+\subsection{University of Waterloo}
+\descript{MSc in Quantum Information/Physics }
+\location{Sept 2014 - Dec 2017 | Waterloo, ON}
+\location{GPA: 89\%}
+\sectionsep
+
+\subsection{Mount Allison University}
+\descript{Honours in Physics \\ double minor Mathematics/Computer Science}
+\location{Sept 2010 - May 2014 | Sackville, NB}
+First Class Honours\\
+\location{GPA: 3.7}
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/whitewhim2718}{\bf whitewhim2718} \\
+LinkedIn://  \href{https://www.linkedin.com/in/thomasalexander2718/}{\bf thomasalexander2718}\\
+Quora://  \href{https://www.quora.com/profile/Thomas-Alexander-4}{\bf Thomas-Alexander-4}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Quantum Information Theory \\
+Open Quantum Systems \\
+Nanoelectronic Devices \\
+Experimental Quantum Computing \\
+Quantum Mechanics 
+\sectionsep
+\subsection{Undergraduate}
+Object Oriented Programming \\
+Data Structures and Algorithms \\
+Algorithm Analysis \\ 
+Vector Analysis \\
+Advanced Linear Algebra \\
+Statistical Mechanics \\
+Statistics \\
+Discrete Mathematics \\
+Complete Physics Curriculum 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Over 5000 lines:}
+Python \textbullet{} Mathematica \\
+\LaTeX\ \\ 
+\location{Over 1000 lines:}
+Java \textbullet{} Scala \textbullet{} Javascript/Node \\
+\location{Familiar:}
+C \textbullet{} Matlab \textbullet{HTML} \textbullet{} Shell \\ 
+Tensorflow \textbullet{} MongoDB \textbullet{} MySQL 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+\runsubsection{IQC/TQT Cory Lab}
+\descript{| Researcher}
+\location{Sep 2014 – Dec 2017 | Waterloo, ON}
+Studied under \textbf{\href{https://services.iqc.uwaterloo.ca/people/profile/dcory/}{Prof David Cory}} director of the Transformitive Quantum Technologies program in the field of experimental Quantum Information. 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed new Bayesian adaptive experimental design algorithms for continuous outcome parameter estimation and demonstrated near order of magnitude in wall clock experiment time. 
+\item Obtained conclusive evidence in favor of proposed hyperpolarization mechanism in phosphorus defects in silicon-28.  
+\item Contributed to development and release of \textbf{\href{http://qinfer.org/}{QInfer}} a Bayesian parameter estimation library using particle filtering.
+\item Proposed new metric for direct comparison of arbitrary neutron interferometer configurations information content.
+\end{tightemize}
+
+\sectionsep
+\runsubsection{IQC Cory Lab}
+\descript{| Undergraduate Researcher}
+\location{May 2013 – August 2013 | Waterloo, ON}
+\begin{tightemize}
+\item One of thirty students out of 400 applicants selected to attend the Undergraduate School on Experimental Quantum Information Processing. 
+\item Led the development and implementation of NI-Engine, a software library used to interface with hardware, design, schedule and execute experiments for the neutron inteferometer at the NIST research nuclear reactor. 
+\item Designed Bayesian adaptive experiment selection strategies for Hamiltonian parameter estimation for use with neutron interferometers.  
+\end{tightemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experience}
+\runsubsection{Mount Allison University}
+\descript{| Backend Developer }
+\location{May 2014 - August 2014 | Sackville , NB}
+\begin{tightemize} 
+\item Developed RESTful API for Android application \textbf{\href{https://play.google.com/store/apps/details?id=ca.irontracker.irontracker&hl=en}{Iron Tracker}} with Python/Flask.
+\item Developed Python CLI for interaction with API and easy integration with Android application. 
+\end{tightemize}
+
+
+\runsubsection{G2 Research (Track Group)}
+\descript{| Software Engineering Intern }
+\location{June 2012 – Sep 2012 | Halifax, NS}
+\begin{tightemize}
+\item Developed prototype software for tracking cellular users via confidential Telecom tower data in C\#.
+\item Correlated timestamped calls with tower locations, headings, signal strengths.  
+\end{tightemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Selected Awards} 
+\begin{tabular}{rll}
+2017	     & 1\textsuperscript{st}/30 place Citadel Correlation One Datathon, Waterloo\\
+2014-2017	     & CREATE NSERC scholarship\\
+2014-2016    & UW Varsity Athlete (Rugby)\\
+2012	     & 4\textsuperscript{th}/30 ACM Atlantic regional qualifiers\\
+\end{tabular}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TALKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Selected Talks} 
+\textit{Optical hyperpolarization and inductive readout of 31P donor nuclei in natural abundance single crystal 29Si}
+\location{DAMOP | 2016 | Providence, RI}
+\textit{Ionization and Inductive Detection of Phosphorus Defects in Isotopically Purified Silicon}
+\location{Google-IQC Conference | 2015 | Kitchener , ON}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications} 
+\vspace{\topsep} 
+\vspace{\topsep} 
+\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+\bibliographystyle{abbrv}
+\bibliography{publications}
+\nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
