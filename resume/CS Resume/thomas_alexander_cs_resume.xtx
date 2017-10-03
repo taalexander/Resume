@@ -199,8 +199,7 @@ Studied under \textbf{\href{https://services.iqc.uwaterloo.ca/people/profile/dco
 \item Developed RESTful API for Android application \textbf{\href{https://play.google.com/store/apps/details?id=ca.irontracker.irontracker&hl=en}{Iron Tracker}} with Python/Flask.
 \item Developed Python CLI for interaction with API and easy integration with Android application. 
 \end{tightemize}
-
-
+\sectionsep
 \runsubsection{G2 Research (Track Group)}
 \descript{| Software Engineering Intern }
 \location{June 2012 – Sep 2012 | Halifax, NS}
